@@ -10,17 +10,17 @@
             <objects>
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="fjg-Ti-gC3" sceneMemberID="viewController">
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" id="YG6-zT-rn8"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="InitialSegue" id="YG6-zT-rn8"/>
                     </connections>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gJP-wj-Mu4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="379" y="399"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeatherMan" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="WeatherMan" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -34,6 +34,20 @@
                                 <color key="pageIndicatorTintColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="currentPageIndicatorTintColor" red="0.3411764706" green="0.79093711700000002" blue="0.74537327060000003" alpha="1" colorSpace="calibratedRGB"/>
                             </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niM-wM-CiW">
+                                <rect key="frame" x="28" y="559" width="30" height="30"/>
+                                <state key="normal" title="Map"/>
+                                <connections>
+                                    <segue destination="ba5-43-drK" kind="show" identifier="MapSegue" id="qbx-wO-maF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lp1-55-sRp">
+                                <rect key="frame" x="499" y="559" width="81" height="30"/>
+                                <state key="normal" title="Favorites"/>
+                                <connections>
+                                    <segue destination="9ca-Nb-ASd" kind="show" identifier="FavoritesSegue" id="eK4-XZ-1bl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -42,6 +56,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1137" y="399"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="dRL-YO-Lyd">
+            <objects>
+                <viewController id="ba5-43-drK" customClass="MapViewController" customModule="WeatherMan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fgr-jN-Zfr"/>
+                        <viewControllerLayoutGuide type="bottom" id="YSL-Os-NM7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rk3-bk-YPw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iAg-7s-Isr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="779" y="1264"/>
+        </scene>
+        <!--Favorites View Controller-->
+        <scene sceneID="uiK-3g-oeG">
+            <objects>
+                <viewController id="9ca-Nb-ASd" customClass="FavoritesViewController" customModule="WeatherMan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kxd-8c-UNa"/>
+                        <viewControllerLayoutGuide type="bottom" id="yHF-JA-krW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pyS-Ti-BVF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SaV-Cw-h6W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1497" y="1264"/>
         </scene>
     </scenes>
 </document>

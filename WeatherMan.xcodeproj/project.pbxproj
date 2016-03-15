@@ -14,6 +14,9 @@
 		69CCB6D61C979616000A581D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69CCB6D51C979616000A581D /* Assets.xcassets */; };
 		69CCB6D91C979616000A581D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69CCB6D71C979616000A581D /* LaunchScreen.storyboard */; };
 		69CCB6E11C979E4C000A581D /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CCB6E01C979E4C000A581D /* FavoritesViewController.swift */; };
+		69CCB6E31C97A243000A581D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CCB6E21C97A243000A581D /* MapViewController.swift */; };
+		69CCB6E51C97A29C000A581D /* DailyFCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CCB6E41C97A29C000A581D /* DailyFCViewController.swift */; };
+		69CCB6E71C97A2B8000A581D /* WeeklyFCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CCB6E61C97A2B8000A581D /* WeeklyFCViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		69CCB6D81C979616000A581D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69CCB6DA1C979616000A581D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69CCB6E01C979E4C000A581D /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		69CCB6E21C97A243000A581D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		69CCB6E41C97A29C000A581D /* DailyFCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyFCViewController.swift; sourceTree = "<group>"; };
+		69CCB6E61C97A2B8000A581D /* WeeklyFCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeeklyFCViewController.swift; sourceTree = "<group>"; };
 		8A835C75BE6318127BB2B2D8 /* Pods-WeatherMan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherMan.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherMan/Pods-WeatherMan.release.xcconfig"; sourceTree = "<group>"; };
 		DBB6615AD1C5B0C45CD9AF4A /* Pods-WeatherMan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherMan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherMan/Pods-WeatherMan.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,11 +80,14 @@
 			children = (
 				69CCB6CE1C979616000A581D /* AppDelegate.swift */,
 				69CCB6D01C979616000A581D /* HomeViewController.swift */,
+				69CCB6E21C97A243000A581D /* MapViewController.swift */,
+				69CCB6E01C979E4C000A581D /* FavoritesViewController.swift */,
+				69CCB6E41C97A29C000A581D /* DailyFCViewController.swift */,
 				69CCB6D21C979616000A581D /* Main.storyboard */,
 				69CCB6D51C979616000A581D /* Assets.xcassets */,
 				69CCB6D71C979616000A581D /* LaunchScreen.storyboard */,
 				69CCB6DA1C979616000A581D /* Info.plist */,
-				69CCB6E01C979E4C000A581D /* FavoritesViewController.swift */,
+				69CCB6E61C97A2B8000A581D /* WeeklyFCViewController.swift */,
 			);
 			path = WeatherMan;
 			sourceTree = "<group>";
@@ -214,8 +223,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				69CCB6D11C979616000A581D /* HomeViewController.swift in Sources */,
+				69CCB6E51C97A29C000A581D /* DailyFCViewController.swift in Sources */,
 				69CCB6E11C979E4C000A581D /* FavoritesViewController.swift in Sources */,
 				69CCB6CF1C979616000A581D /* AppDelegate.swift in Sources */,
+				69CCB6E71C97A2B8000A581D /* WeeklyFCViewController.swift in Sources */,
+				69CCB6E31C97A243000A581D /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

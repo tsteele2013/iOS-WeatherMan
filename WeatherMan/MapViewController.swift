@@ -1,5 +1,5 @@
 //
-//  FavoritesViewController.swift
+//  MapViewController.swift
 //  WeatherMan
 //
 //  Created by Trevor Steele on 3/14/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FavoritesViewController: UIViewController {
+class MapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
