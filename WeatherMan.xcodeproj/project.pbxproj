@@ -17,6 +17,8 @@
 		69CCB6E31C97A243000A581D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CCB6E21C97A243000A581D /* MapViewController.swift */; };
 		69CCB6E51C97A29C000A581D /* DailyFCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CCB6E41C97A29C000A581D /* DailyFCViewController.swift */; };
 		69CCB6E71C97A2B8000A581D /* WeeklyFCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CCB6E61C97A2B8000A581D /* WeeklyFCViewController.swift */; };
+		69CCB6E91C97A709000A581D /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CCB6E81C97A709000A581D /* Weather.swift */; };
+		69CCB6ED1C97AC21000A581D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69CCB6EC1C97AC21000A581D /* CoreLocation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		69CCB6E21C97A243000A581D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		69CCB6E41C97A29C000A581D /* DailyFCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyFCViewController.swift; sourceTree = "<group>"; };
 		69CCB6E61C97A2B8000A581D /* WeeklyFCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeeklyFCViewController.swift; sourceTree = "<group>"; };
+		69CCB6E81C97A709000A581D /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		69CCB6EC1C97AC21000A581D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8A835C75BE6318127BB2B2D8 /* Pods-WeatherMan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherMan.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherMan/Pods-WeatherMan.release.xcconfig"; sourceTree = "<group>"; };
 		DBB6615AD1C5B0C45CD9AF4A /* Pods-WeatherMan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherMan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherMan/Pods-WeatherMan.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69CCB6ED1C97AC21000A581D /* CoreLocation.framework in Frameworks */,
 				289A76DA4A0B878D61B2EF4A /* Pods_WeatherMan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,22 +84,40 @@
 			isa = PBXGroup;
 			children = (
 				69CCB6CE1C979616000A581D /* AppDelegate.swift */,
-				69CCB6D01C979616000A581D /* HomeViewController.swift */,
-				69CCB6E21C97A243000A581D /* MapViewController.swift */,
-				69CCB6E01C979E4C000A581D /* FavoritesViewController.swift */,
-				69CCB6E41C97A29C000A581D /* DailyFCViewController.swift */,
+				69CCB6EB1C97A742000A581D /* ViewControllers */,
+				69CCB6EA1C97A724000A581D /* Models */,
 				69CCB6D21C979616000A581D /* Main.storyboard */,
 				69CCB6D51C979616000A581D /* Assets.xcassets */,
 				69CCB6D71C979616000A581D /* LaunchScreen.storyboard */,
 				69CCB6DA1C979616000A581D /* Info.plist */,
-				69CCB6E61C97A2B8000A581D /* WeeklyFCViewController.swift */,
 			);
 			path = WeatherMan;
+			sourceTree = "<group>";
+		};
+		69CCB6EA1C97A724000A581D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				69CCB6E81C97A709000A581D /* Weather.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		69CCB6EB1C97A742000A581D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				69CCB6D01C979616000A581D /* HomeViewController.swift */,
+				69CCB6E21C97A243000A581D /* MapViewController.swift */,
+				69CCB6E01C979E4C000A581D /* FavoritesViewController.swift */,
+				69CCB6E41C97A29C000A581D /* DailyFCViewController.swift */,
+				69CCB6E61C97A2B8000A581D /* WeeklyFCViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		F7570471CED25CCA876640E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				69CCB6EC1C97AC21000A581D /* CoreLocation.framework */,
 				385C9B7651F72C0E88F198C8 /* Pods_WeatherMan.framework */,
 			);
 			name = Frameworks;
@@ -228,6 +251,7 @@
 				69CCB6CF1C979616000A581D /* AppDelegate.swift in Sources */,
 				69CCB6E71C97A2B8000A581D /* WeeklyFCViewController.swift in Sources */,
 				69CCB6E31C97A243000A581D /* MapViewController.swift in Sources */,
+				69CCB6E91C97A709000A581D /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

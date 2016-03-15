@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>INTULocationManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-WeatherMan.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>27FA43853CD43DF760343E7461E69FF9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6D27A9A4E48A27E3618B5342A8547425</key>
+		<key>0C83EDA1420517077FD72C3DD5A2F0BF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7EBC1A2AB48E1CE5A4E39A7FE924D094</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B0FE1CF55DD4F78BEE237C1243C98367</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -85,9 +85,11 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-WeatherMan/Alamofire.framework"
+  install_framework "Pods-WeatherMan/INTULocationManager.framework"
   install_framework "Pods-WeatherMan/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-WeatherMan/Alamofire.framework"
+  install_framework "Pods-WeatherMan/INTULocationManager.framework"
   install_framework "Pods-WeatherMan/SwiftyJSON.framework"
 fi

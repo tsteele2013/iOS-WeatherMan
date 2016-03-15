@@ -6,6 +6,7 @@ use_frameworks!
 target 'WeatherMan' do
     pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
     pod 'Alamofire'
+    pod 'INTULocationManager'
     
 end
 
